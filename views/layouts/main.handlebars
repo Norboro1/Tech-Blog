@@ -15,7 +15,7 @@
         <nav class="navbar">
             <ul class="nav">
                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
                 {{#if logged_in}}
                 <li class="nav-item"><a class="nav-link" href="#" id="logout">Logout</a></li>
                 {{else}}
@@ -24,7 +24,7 @@
             </ul>
         </nav>
         <div class="title px-3 py-1 mx-3 rounded-4">
-            <h1 class="text-main"><strong>The Tech Blog</strong></h1>
+            <h1 class="text-main"><strong id="navTitle">The Tech Blog</strong></h1>
         </div>
     </div>
     <main class="container-fluid px-5 py-4">

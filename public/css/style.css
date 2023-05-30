@@ -5,6 +5,7 @@ html, body {
 p {
     padding:0;
     margin: 0;
+    font-size: 20px;
 }
 
 
@@ -48,10 +49,34 @@ p {
 .card-header{
     border: rgb(65, 31, 31) solid 5px;
     background-color: rgb(65, 31, 31);
-    color: rgb(163, 163, 163);
+    color: rgb(255, 255, 255);
 }
 
 .card-body{
     border: rgb(65, 31, 31) solid 5px;
     color: rgb(65, 31, 31);
+}
+
+.comment-header{
+    border: rgb(136, 136, 136) solid 5px!important;
+    background-color: rgb(136, 136, 136);
+    color: rgb(65, 31, 31);
+}
+
+.comment-body{
+    border: rgb(136, 136, 136) solid 5px;
+    color: rgb(65, 31, 31);
+}
+
+h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+h3 a:hover, h1 a:focus {
+    color: #bbbbbb;
+}
+
+.modal-dialog {
+    max-width: 75%;
 }

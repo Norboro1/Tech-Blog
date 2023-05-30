@@ -1,0 +1,36 @@
+<div class="d-grid gap-2">
+{{#each posts as |post|}}
+    <button class="btn post-edit bg-secondary rounded-1 d-flex justify-content-between" data-post-id="{{post.id}}">{{post.title}}<span>{{format_date
+            post.created_at}}</span></button>
+{{/each}}
+</div>
+
+<div class="modal" id="newPostModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered w-75">
+        <div class="modal-content">
+            <div class="card rounded-0">
+                <div class="card-header rounded-0 px-4 d-flex justify-content-between align-items-center">
+                    <h3 class="m-0">Create New Post</h3>
+                </div>
+                <div class="card-body px-4">
+                    <form class="new-post-form">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control mb-3 mt-1 rounded-0" id="title" />
+                        <label for="content">Content</label>
+                        <textarea class="form-control mb-3 mt-1 rounded-0" id="content" rows="5"></textarea>
+                        <div class="d-grid">
+                            <button type="submit" class="btn bg-secondary rounded-1">Create Post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center fixed-bottom mb-5">
+    <button class="btn bg-main" data-bs-toggle="modal" data-bs-target="#newPostModal">+ New Post</button>
+</div>
+</main>
+
+<script src="./js/dashboard.js"></script>
