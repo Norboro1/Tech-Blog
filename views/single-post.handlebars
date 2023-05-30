@@ -12,6 +12,8 @@
 {{> comment}}
 {{/each}}
 
+{{#if logged_in}}
+
 <div class="card rounded-0 mb-3">
     <div class="card-header rounded-0 px-4 d-flex justify-content-between align-items-center">
         <h3 class="my-3"></h3>
@@ -26,5 +28,7 @@
         </form>
     </div>
 </div>
+
+{{/if}}
 
 <script src="../js/comment.js"></script>
