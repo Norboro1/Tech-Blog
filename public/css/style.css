@@ -2,6 +2,11 @@ html, body {
     font-size: 20px;
 }
 
+p {
+    padding:0;
+    margin: 0;
+}
+
 
 .nav-link {
     color: white;
@@ -15,6 +20,15 @@ html, body {
     background-color: rgb(65, 31, 31);
 }
 
+.btn{
+    color: white;
+}
+
+.btn:hover, .btn:focus{
+    background-color: rgb(136, 136, 136)!important;
+    color: #45494d;
+}
+
 .text-main{
     color: rgb(65, 31, 31);
 }
@@ -24,4 +38,20 @@ html, body {
     max-width: fit-content;
     max-height: fit-content;
     filter: drop-shadow(7px 7px 0 rgb(112, 112, 112));
+}
+
+.card {
+    border-width: 0px;
+    border-color: rgb(65, 31, 31);
+}
+
+.card-header{
+    border: rgb(65, 31, 31) solid 5px;
+    background-color: rgb(65, 31, 31);
+    color: rgb(163, 163, 163);
+}
+
+.card-body{
+    border: rgb(65, 31, 31) solid 5px;
+    color: rgb(65, 31, 31);
 }
