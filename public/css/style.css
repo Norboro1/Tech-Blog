@@ -1,0 +1,27 @@
+html, body {
+    font-size: 20px;
+}
+
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #bbbbbb;
+}
+
+.bg-main{
+    background-color: rgb(65, 31, 31);
+}
+
+.text-main{
+    color: rgb(65, 31, 31);
+}
+
+.title{
+    background-color: white;
+    max-width: fit-content;
+    max-height: fit-content;
+    filter: drop-shadow(7px 7px 0 rgb(112, 112, 112));
+}
